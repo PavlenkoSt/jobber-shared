@@ -1,4 +1,4 @@
-export {
+export type {
   IAuthUser,
   IAuthResponse,
   IReduxLogout,
@@ -15,9 +15,9 @@ export {
   IAuthDocument,
 } from "./interfaces/auth.interface";
 
-export { IBuyerDocument, IReduxBuyer } from "./interfaces/buyer.interface";
+export type { IBuyerDocument, IReduxBuyer } from "./interfaces/buyer.interface";
 
-export {
+export type {
   IConversationDocument,
   IMessageDocument,
   IMessageDetails,
@@ -27,9 +27,9 @@ export {
   IChatMessageProps,
 } from "./interfaces/chat.interface";
 
-export { IEmailLocals } from "./interfaces/email.interface";
+export type { IEmailLocals } from "./interfaces/email.interface";
 
-export {
+export type {
   GigType,
   ICreateGig,
   IGigCardItems,
@@ -42,7 +42,7 @@ export {
   ISellerGig,
 } from "./interfaces/gig.interface";
 
-export {
+export type {
   IDeliveredWork,
   IExtendedDelivery,
   IOffer,
@@ -53,7 +53,7 @@ export {
   IOrderReview,
 } from "./interfaces/order.interface";
 
-export {
+export type {
   IRatingCategories,
   IRatingCategoryItem,
   IRatingTypes,
@@ -61,7 +61,7 @@ export {
   IReviewMessageDetails,
 } from "./interfaces/review.interface";
 
-export {
+export type {
   IHitsTotal,
   IPaginateProps,
   IQueryList,
@@ -70,7 +70,7 @@ export {
   ITerm,
 } from "./interfaces/search.interface";
 
-export {
+export type {
   ICertificate,
   IEducation,
   IExperience,
@@ -78,3 +78,13 @@ export {
   ISellerDocument,
   SellerType,
 } from "./interfaces/seller.interface";
+
+export { uploadImage, uploadVideo } from "./cloudinary";
+
+export {
+  type IError,
+  BadRequest,
+  NotAuthorized,
+  NotFound,
+  ServerError,
+} from "./error-handle";
