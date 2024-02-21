@@ -88,3 +88,5 @@ export {
   NotFound,
   ServerError,
 } from "./error-handle";
+
+export { verifyGatewayRequest } from "./gateway-middleware";
