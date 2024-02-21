@@ -90,3 +90,5 @@ export {
 } from "./error-handle";
 
 export { verifyGatewayRequest } from "./gateway-middleware";
+
+export { createLogger } from "./logger";
