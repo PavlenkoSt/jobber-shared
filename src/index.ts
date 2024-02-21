@@ -92,3 +92,11 @@ export {
 export { verifyGatewayRequest } from "./gateway-middleware";
 
 export { createLogger } from "./logger";
+
+export {
+  firstLetterUppercase,
+  isDataURL,
+  isEmail,
+  lowerCase,
+  toUpperCase,
+} from "./helpers";
